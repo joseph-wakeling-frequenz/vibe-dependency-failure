@@ -1,0 +1,10 @@
+{
+    "name": "dep1",
+
+    "targetType": "sourceLibrary",
+
+    "dependencies": {
+        "std-experimental-xml": ">=0.1.7 <0.2.0",
+        "unit-threaded:assertions": ">=0.8.0 <0.10.0"
+    }
+}

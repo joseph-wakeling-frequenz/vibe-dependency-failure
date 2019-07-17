@@ -1,0 +1,19 @@
+{
+    "name": "vibe-deps-failure",
+    "authors": ["Joseph Wakeling"],
+    "description": "Simple example of DUB dependency resolution failure",
+
+    "dependencies": {
+        "dep1": { "path": "dep1" },
+        "dep2": { "path": "dep2" },
+        "std_data_json": ">=0.18.3 <0.19.0",
+        "pyd": ">=0.10.5 <0.11.0",
+        "vibe-core": ">=1.6.0 <2.0.0",
+        "vibe-d:redis": ">=0.8.4 <0.9.0",
+        "vibe-d:tls": ">=0.8.4 <0.9.0"
+    },
+    "subConfigurations": {
+        "pyd": "python36",
+        "vibe-d:tls": "openssl-1.1"
+    }
+}
